@@ -1,18 +1,20 @@
 <template>
   <div class="index page is-flex-direction-column" :class="pageClasses">
-    <div class="video-wrap">
-      <figure class="image is-16by9">
-        <iframe
-          class="has-ratio"
-          width="640"
-          height="360"
-          :src="todayVideo"
-          allow="autoplay"
-          frameborder="0"
-          allowfullscreen
-        />
-      </figure>
-    </div>
+    <client-only placeholder="Loading...">
+      <div class="video-wrap">
+        <figure class="image is-16by9">
+          <iframe
+            class="has-ratio"
+            width="640"
+            height="360"
+            :src="todayVideo"
+            allow="autoplay"
+            frameborder="0"
+            allowfullscreen
+          />
+        </figure>
+      </div>
+    </client-only>
   </div>
 </template>
 
