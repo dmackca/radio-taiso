@@ -1,5 +1,5 @@
 <template>
-  <div class="index page is-flex-direction-column">
+  <div class="index page is-flex-direction-column" :class="pageClasses">
     <div class="video-wrap">
       <figure class="image is-16by9">
         <iframe
@@ -69,6 +69,12 @@ export default {
       }
 
       return url
+    },
+
+    pageClasses () {
+      return [
+        `day-${this.dayOfWeek}`
+      ]
     }
   }
 }
@@ -82,11 +88,12 @@ export default {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background: #ccc;
+  background: url('~/assets/bg/omoide.jpg') $white-ter;
+  background-size: cover;
 
   .video-wrap {
-    // background: red;
     width: 100%;
+    background: $black;
     box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
 
     @include tablet {
