@@ -1,21 +1,21 @@
 <template>
-  <div class="index page is-flex-direction-column" :class="pageClasses">
-    <client-only placeholder="Loading...">
-      <div class="video-wrap">
-        <figure class="image is-16by9">
-          <iframe
-            class="has-ratio"
-            width="640"
-            height="360"
-            :src="todayVideo"
-            allow="autoplay"
-            frameborder="0"
-            allowfullscreen
-          />
-        </figure>
-      </div>
-    </client-only>
-  </div>
+  <client-only placeholder="🤹 Loading...">
+    <div class="index page is-flex-direction-column" :class="pageClasses">
+        <div class="video-wrap">
+          <figure class="image is-16by9">
+            <iframe
+              class="has-ratio"
+              width="640"
+              height="360"
+              :src="todayVideo"
+              allow="autoplay"
+              frameborder="0"
+              allowfullscreen
+            />
+          </figure>
+        </div>
+    </div>
+  </client-only>
 </template>
 
 <script>
@@ -52,6 +52,10 @@ export default {
       ['UMkXEcJFE4k']
     ]
   }),
+
+  mounted() {
+    console.log('today is: %s', this.dayOfWeek)
+  },
 
   computed: {
     dayOfWeek () {
