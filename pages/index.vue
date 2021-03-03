@@ -105,9 +105,11 @@ export default {
   background-size: cover;
 
   .video-wrap {
+    $shadow-color: rgba(0, 0, 0, 0.8);
+
     width: 100%;
-    background: $black;
-    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+    background: $shadow-color;
+    box-shadow: 0 5px 30px $shadow-color;
 
     @include tablet {
       max-width: 80vw;
