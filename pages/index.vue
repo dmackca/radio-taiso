@@ -101,7 +101,7 @@ export default {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background: url('~/assets/bg/omoide.jpg') $white-ter;
+  background: url('~/assets/bg/omoide.jpg') #9dba9c;
   background-size: cover;
 
   .video-wrap {
