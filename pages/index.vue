@@ -113,6 +113,8 @@ export default {
 
     @include tablet {
       max-width: 80vw;
+      overflow: hidden;
+      border-radius: 0.75rem;
     }
   }
 }
