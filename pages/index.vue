@@ -1,21 +1,28 @@
 <template>
-  <client-only placeholder="🤹 Loading...">
-    <div class="index page is-flex-direction-column" :class="pageClasses">
-        <div class="video-wrap">
-          <figure class="image is-16by9">
-            <iframe
-              class="has-ratio"
-              width="640"
-              height="360"
-              :src="todayVideo"
-              allow="autoplay"
-              frameborder="0"
-              allowfullscreen
-            />
-          </figure>
-        </div>
-    </div>
-  </client-only>
+  <div class="page-wrap">
+  	<client-only>
+  	  <div class="index page is-flex-direction-column" :class="pageClasses">
+  	      <div class="video-wrap">
+  	        <figure class="image is-16by9">
+  	          <iframe
+  	            class="has-ratio"
+  	            width="640"
+  	            height="360"
+  	            :src="todayVideo"
+  	            allow="autoplay"
+  	            frameborder="0"
+  	            allowfullscreen
+  	          />
+  	        </figure>
+  	      </div>
+  	  </div>
+  	  <template slot="placeholder">
+  	    <div class="index page is-flex-direction-column placeholder">
+  	        <div class="loading-message">🤹 Loading...</div>
+  	    </div>
+  	  </template>
+  	</client-only>
+  </div>
 </template>
 
 <script>
