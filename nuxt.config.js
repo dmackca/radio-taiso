@@ -51,6 +51,12 @@ export default {
     'nuxt-buefy'
   ],
 
+  // buefy options
+  buefy: {
+    css: true,
+    materialDesignIcons: false
+  },
+
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
   }
