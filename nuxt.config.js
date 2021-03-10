@@ -38,6 +38,13 @@ export default {
     'nuxt-purgecss'
   ],
 
+  // purgeCSS options
+  purgeCSS: {
+    whitelistPatterns: [
+      /day-\d/
+    ]
+  },
+
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/buefy
