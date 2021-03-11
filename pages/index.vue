@@ -108,19 +108,19 @@ export default {
 
   // custom background image for each day
   &.day-2 { // tuesday
-    background: url('~/assets/bg/marnie047.jpg') #9dba9c;
+    background-image: url('~/assets/bg/marnie047.jpg');
   }
 
   &.day-3 { // wednesday
-    background: url('~/assets/bg/kaguya1.jpg') #9dba9c;
+    background-image: url('~/assets/bg/kaguya1.jpg');
   }
 
   &.day-4 { // thursday
-    background: url('~/assets/bg/omohide1.jpg') #9dba9c;
+    background-image: url('~/assets/bg/omohide1.jpg');
   }
 
   // &.day-5 { // friday 🥳
-  //   background: url('~/assets/bg/omoide.jpg') #9dba9c;
+  //   background-image: url('~/assets/bg/omoide.jpg');
   // }
 
   .video-wrap {
